@@ -24,7 +24,8 @@ EXEMPLE QUERIES:
 USER SIGNUP: 
 ```SQL
 
-INSERT INTO user (first_name, last_name, user_name, email, password) VALUES ('Dani', 'Lumbreras', 'danielluces', 'daniluces@example.com', '1234');
+INSERT INTO user (first_name, last_name, user_name, email, password) 
+VALUES ('Dani', 'Lumbreras', 'danielluces', 'daniluces@example.com', '1234');
 
 ```
 CREATE NEW COURSE: 
