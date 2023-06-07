@@ -40,3 +40,13 @@ SHOW ALL THE COURSES CREATED BY A USER:
 SELECT course.name, user.user_name FROM course JOIN user ON course.author_id = user.id WHERE user.user_name = 'raulalhena';
 
 ```
+
+ALL COURSES LIST ORDERED BY NUMBER OF STARS
+```SQL
+SELECT course.name, review.stars 
+FROM course
+JOIN course_has_review ON course.id = course_has_review.course_id
+JOIN review ON course_has_review.review_id = review.id
+ORDER BY review.stars DESC
+```
+
