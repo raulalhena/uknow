@@ -30,14 +30,18 @@ INSERT INTO user (first_name, last_name, user_name, email, password) VALUES ('Da
 CREATE NEW COURSE: 
 ```SQL
 
-INSERT INTO course (name, content, tags, difficulty, author_id) VALUES ('New course 1', 'New content to your delight', 'spiritual delight, enjoy life', 'easy', 50);
+INSERT INTO course (name, content, tags, difficulty, author_id) 
+VALUES ('New course 1', 'New content to your delight', 'spiritual delight, enjoy life', 'easy', 50);
 
 ````
 
 SHOW ALL THE COURSES CREATED BY A USER:
 ```SQL
 
-SELECT course.name, user.user_name FROM course JOIN user ON course.author_id = user.id WHERE user.user_name = 'raulalhena';
+SELECT course.name, user.user_name 
+FROM course 
+JOIN user ON course.author_id = user.id 
+WHERE user.user_name = 'raulalhena';
 
 ```
 
